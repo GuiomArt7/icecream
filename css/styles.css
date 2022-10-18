@@ -63,7 +63,7 @@ img {
 }
 /* Header */
 .header {
-  background-image: url(../img/heading.jpg);
+  background-image: url(../img/heather.jpg);
   height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,5 +72,45 @@ img {
 .header__texto {
   text-align: center;
   margin-top: 5rem;
+  color: var(--primario);
+}
+@media (min-width: 768px) {
+  .header__texto {
+    margin-top: 15rem;
+  }
+}
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
   color: var(--blanco);
+}
+.logo__nombre {
+  font-weight: 400;
+}
+.logo__bold {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.navegacion__enlace {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(--blanco);
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
 }
