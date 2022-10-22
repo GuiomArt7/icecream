@@ -197,6 +197,17 @@ p {
 .campo__field--textarea {
   height: 20rem;
 }
+@media (max-width: 420px) {
+  .campo,
+  .campo__label,
+  .campo__field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .campo__field--textarea {
+    flex-basis: content;
+  }
+}
 
 /** Grid **/
 .grid {
