@@ -155,13 +155,13 @@ img {
 
 /* Contacto */
 .contacto-bg {
-  background-image: url(../img/cono-vertical.jpg);
+  background-image: url(../img/heading.jpg);
   height: 40rem;
-  background-size: contain;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .formulario {
-  background-color: var(--blanco);
+  background-color: var(--primarioClaro);
   margin: -5rem auto 0 auto;
   width: 95%;
   padding: 5rem;
