@@ -1,7 +1,10 @@
 :root {
   --fuenteHeading: "PT Sans", sans-serif;
   --fuenteParrafos: "Open Sans", sans-serif;
-  --primario: #784d3c;
+  --primario: #928094;
+  --primarioClaro: #f8f4f7;
+  --titulo: #291225;
+  --boton: #123455;
   --blanco: #ffffff;
   --negro: #000000;
 }
@@ -71,8 +74,8 @@ img {
 }
 .header__texto {
   text-align: center;
-  margin-top: 5rem;
-  color: var(--primario);
+  color: var(--titulo);
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   .header__texto {
@@ -85,6 +88,9 @@ img {
     justify-content: space-between;
     align-items: center;
   }
+}
+.barra {
+  padding-top: 4rem;
 }
 .logo {
   color: var(--blanco);
@@ -110,7 +116,101 @@ img {
 @media (min-width: 768px) {
   .contenido-principal {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 4rem;
   }
+}
+.entrada {
+  border-bottom: 1px solid var(--primario);
+  margin-bottom: 2rem;
+}
+.entrada:last-of-type {
+  border: none;
+  margin-bottom: 0;
+}
+.boton {
+  display: block;
+  font-family: var(--fuenteHeading);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+}
+.boton--primario {
+  background-color: var(--boton);
+}
+.footer {
+  background-color: var(--primario);
+  padding-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+/* Contacto */
+.contacto-bg {
+  background-image: url(../img/cono-vertical.jpg);
+  height: 40rem;
+  background-size: contain;
+  background-repeat: repeat;
+}
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+.campo__field--textarea {
+  height: 20rem;
+}
+
+/** Grid **/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/** Productos **/
+.producto {
+  background-color: var(--primarioClaro);
+  padding: 1rem;
+}
+
+.producto__nombre {
+  font-size: 4rem;
+  font-family: var(--fuenteHeading);
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+}
+.producto__imagen {
+  width: 100%;
+  object-fit: cover;
+  height: 90%;
 }

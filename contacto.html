@@ -29,36 +29,47 @@
         </div>
     </header>
 
-    <div class="contenedor contenido-principal">
-        <main class="blog" >
-            <h3>Helados naturales</h3>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="./img/kenta.jpg" alt="imagen blog">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Beneficios del Helado</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore consequuntur 
-                        expedita fugiat deleniti a esse, quasi labore veniam harum ullam,
-                    reprehenderit voluptas neque recusandae quo ab, modi fugit quas.</p>
-                    <a href="entrada1.html" class="boton boton--primario" >Ver más</a>
-                </div>
-            </article>
-            <article class="entrada">
-                <div class="entrada__imagen">
-                    <img src="./img/jeswin.jpg" alt="imagen blog">
-                </div>
-                <div class="entrada__contenido">
-                    <h4 class="no-margin">Recetas con Helado</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam tempore consequuntur 
-                        expedita fugiat deleniti a esse, quasi labore veniam harum ullam,
-                    reprehenderit voluptas neque recusandae quo ab, modi fugit quas.</p>
-                    <a href="entrada2.html" class="boton boton--primario" >Ver más</a>
-                </div>
-            </article>
-        </main>
-         
-    </div>
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3>
+
+        <div class="contacto-bg"></div>
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input 
+                class="campo__field"
+                type="text" 
+                placeholder="Tu nombre" 
+                id="nombre">
+            </div>
+
+            <div class="campo">
+                <label class="campo__label" for="nombre">Email</label>
+                <input 
+                class="campo__field"
+                type="email" 
+                placeholder="Tu email" 
+                id="email">
+            </div>
+
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea 
+                class="campo__field campo__field--textarea"
+                type="text"
+                id="mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input 
+                type="submit" 
+                value="Enviar" 
+                class="boton boton--primario">
+            </div>
+        </form>
+
+       
+    </main>
 
     <footer class="footer">
         <div class="contenedor">
